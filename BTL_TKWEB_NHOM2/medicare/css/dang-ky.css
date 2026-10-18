@@ -1,0 +1,88 @@
+.dk-box {
+    max-width: 400px;
+    margin: 30px auto;
+}
+.dk-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+.dk-tab {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: none;
+    font-size: 15px;
+    cursor: pointer;
+    color: #666;
+}
+.dk-tab.active {
+    color: #0f766e;
+    font-weight: bold;
+    border-bottom: 3px solid #0f766e;
+    margin-bottom: -2px;
+}
+.dk-box input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.dk-box input:focus {
+    outline: none;
+    border-color: #0f766e;
+}
+.dk-box .btn {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    border-radius: 5px;
+    background: #0f766e;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.dk-box .btn:hover {
+    background: #0d665f;
+}
+.msg {
+    min-height: 20px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+.msg.error {
+    color: #dc2626;
+}
+.msg.success {
+    color: #16a34a;
+}
+.dk-box small {
+    color: #777;
+}
+.dk-box small strong {
+    color: #0f766e;
+}
+@media (max-width: 600px) {
+    .dk-box {
+        margin: 20px 10px;
+    }
+}
+.dk-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+        url("../images/anhdndk.avif") center / cover no-repeat,
+        #f2f5f5;
+}
+.dk-content .dk-box {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}

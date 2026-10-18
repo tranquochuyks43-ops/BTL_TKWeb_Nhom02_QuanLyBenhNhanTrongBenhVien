@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bệnh nhân</title>
+  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/benh-nhan.css">     
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="logo-wrap">
+      <div class="logo-circle"><img src="images\logo_UTC.webp" alt="Logo" onerror="this.style.display='none'"><span>LOGO</span></div>
+      <h2 class="logo">Bệnh Viện UTC</h2>
+    </div>
+    <a href="trang-chu.html">Trang chủ</a>
+    <a href="benh-nhan.html">Bệnh nhân</a>
+    <a href="bac-si.html">Bác sĩ</a>
+    <a href="ke-don.html">Kê Đơn</a>
+    <a href="dang-ky.html">Đăng nhập / Đăng ký</a>
+  </div>
+
+  <div class="main">
+
+    <div class="header">
+      <button id="toggleBtn">☰</button>
+      <h3>Bệnh nhân</h3>
+      <span id="clock"></span>
+    </div>
+
+    <!-- NỘI DUNG -->
+    <div class="content">
+      <div class="box">
+        <h3>Thêm bệnh nhân</h3>
+        <div class="form-row">
+          <input type="text" id="bnName" placeholder="Họ tên bệnh nhân">
+          <select id="bnGender"><option>Nam</option><option>Nữ</option></select>
+          <input type="number" id="bnAge" placeholder="Tuổi" min="0" max="120">
+          <input type="text" id="bnPhone" placeholder="Số điện thoại (10 số)" maxlength="10">
+          <input type="text" id="bnCCCD" placeholder="Số CCCD (12 số)" maxlength="12">
+          <input type="text" id="bnQue" placeholder="Quê quán">
+          <button class="btn" id="bnSave">Thêm</button>
+        </div>
+        <p class="msg error" id="bnMsg"></p>
+      </div>
+
+      <div class="box">
+        <h3>Danh sách bệnh nhân</h3>
+        <div class="form-row">
+          <input type="text" id="bnSearch" placeholder="Tìm theo mã hoặc họ tên...">
+        </div>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Mã</th><th>Họ tên</th><th>Giới tính</th><th>Tuổi</th><th>SĐT</th><th>CCCD</th><th>Quê quán</th><th>Thao tác</th></tr></thead>
+            <tbody id="bnList"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">© benhvienutcvn.gmail.com </div>
+  </div>
+
+  <script src="js/script.js"></script>   
+  <script src="js/benh-nhan.js"></script>     
+</body>
+</html>

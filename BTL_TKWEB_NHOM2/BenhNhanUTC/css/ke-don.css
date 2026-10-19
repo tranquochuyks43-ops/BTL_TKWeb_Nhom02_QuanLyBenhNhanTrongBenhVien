@@ -5,8 +5,7 @@
     align-items: center;
     gap: 40px; 
 }
-.bn-info p {
-    color: #333; 
+.bn-info p { 
     margin: 5px 10px;
     font-size: 18px;
 }
@@ -47,9 +46,6 @@ h4{
     background-color: #16a34a; 
     font-weight: bold; 
     padding: 10px 30px; 
-}
-.btn-save:hover { 
-    background-color: #15803d; 
 }
 .success-msg { 
     display: block; 

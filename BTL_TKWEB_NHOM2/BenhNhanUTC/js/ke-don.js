@@ -11,7 +11,7 @@ function hienThiBenhNhan() {
   var viTri = document.getElementById("patientSelect").value;
   var bn = danhSachBenhNhan[viTri];
 
-  // Gán từng giá trị thủ công
+  // Gán  giá trị 
   document.getElementById("txtTen").innerText = bn.ten;
   document.getElementById("txtGioiTinh").innerText = bn.gioiTinh;
   document.getElementById("txtNgaySinh").innerText = bn.ngaySinh;

@@ -10,20 +10,17 @@ var danhSachBenhNhan = [
 function hienThiBenhNhan() {
   var viTri = document.getElementById("patientSelect").value;
   var bn = danhSachBenhNhan[viTri];
-
-  // Gán  giá trị 
-  document.getElementById("txtTen").innerText = bn.ten;
-  document.getElementById("txtGioiTinh").innerText = bn.gioiTinh;
-  document.getElementById("txtNgaySinh").innerText = bn.ngaySinh;
-  document.getElementById("txtTuoi").innerText = bn.tuoi;
-  document.getElementById("txtDanToc").innerText = bn.danToc;
-  document.getElementById("txtSDT").innerText = bn.sdt;
-  document.getElementById("txtQueQuan").innerText = bn.queQuan;
-  document.getElementById("txtCCCD").innerText = bn.cccd;
-  document.getElementById("txtNhipTim").innerText = bn.nhipTim;
-  document.getElementById("txtHuyetAp").innerText = bn.huyetAp;
-  document.getElementById("txtChuanDoan").innerText = bn.chuanDoan;
-
+  // Gán giá tri =fieldMap
+  var fieldMap = {
+  "txtTen": "ten", "txtGioiTinh": "gioiTinh", "txtNgaySinh": "ngaySinh",
+  "txtTuoi": "tuoi", "txtDanToc": "danToc", "txtSDT": "sdt",
+  "txtQueQuan": "queQuan", "txtCCCD": "cccd", "txtNhipTim": "nhipTim",
+  "txtHuyetAp": "huyetAp", "txtChuanDoan": "chuanDoan"
+};
+for (var id in fieldMap) {
+  document.getElementById(id).innerText = bn[fieldMap[id]];
+}
+  
   document.getElementById("tableBody").innerHTML = "";
   document.getElementById("tongVienPhi").innerText = "0";
   document.getElementById("saveMessage").innerText = "";

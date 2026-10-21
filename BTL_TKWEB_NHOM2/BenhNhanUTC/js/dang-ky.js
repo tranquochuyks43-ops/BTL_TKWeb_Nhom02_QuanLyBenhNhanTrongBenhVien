@@ -41,6 +41,21 @@ document.getElementById('btnReg').onclick = function () {
   }, 1000);
 };
 
+// KIỂM TRA EMAIL
+
+btnReg.addEventListener("click", function() {
+    const email = rgEmail.value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+
+        rgMsg.textContent = "Email không đúng định dạng!";
+        rgMsg.classList.add("error");
+
+        return;
+    }
+});
+
 // ===== Đăng nhập =====
 document.getElementById('btnLogin').onclick = function () {
   var user = document.getElementById('lgUser').value.trim();

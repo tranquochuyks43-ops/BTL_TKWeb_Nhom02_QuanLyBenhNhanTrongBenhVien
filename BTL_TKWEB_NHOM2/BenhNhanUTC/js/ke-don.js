@@ -97,21 +97,5 @@ function luuDonThuoc() {
       alert("Vui lòng điền đầy đủ thông tin Tên và SĐT của Bác sĩ!");
       return; 
   }
-  
-  // Kiểm tra lại tên bác sĩ có chứa số hay không
-  var tenCoSo = false;
-  for (var i = 0; i < tenBS.length; i++) {
-      if (tenBS[i] >= '0' && tenBS[i] <= '9') {
-          tenCoSo = true;
-          break;
-      }
-  }
-
-  // Kiểm tra lại toàn bộ điều kiện trước khi lưu
-  if (tenCoSo || isNaN(sdtBS) || sdtBS.length !== 10) {
-      alert("Thông tin bác sĩ chưa hợp lệ, vui lòng kiểm tra lại!");
-      return;
-  }
-
   document.getElementById("saveMessage").innerText = " Lưu đơn thuốc thành công!";
 }

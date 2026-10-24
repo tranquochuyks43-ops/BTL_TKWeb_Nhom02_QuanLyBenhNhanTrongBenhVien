@@ -35,7 +35,7 @@ document.getElementById('btnReg').onclick = function () {
 
   msg.className = 'msg ok';
   msg.textContent = 'Đăng ký thành công! Mời bạn đăng nhập.';
-  
+};
 // KIỂM TRA EMAIL
 btnReg.addEventListener("click", function() {
     const email = rgEmail.value.trim();

@@ -35,14 +35,8 @@ document.getElementById('btnReg').onclick = function () {
 
   msg.className = 'msg ok';
   msg.textContent = 'Đăng ký thành công! Mời bạn đăng nhập.';
-  setTimeout(function () {
-    document.getElementById('lgUser').value = user;
-    showTab(true);
-  }, 1000);
-};
-
+  
 // KIỂM TRA EMAIL
-
 btnReg.addEventListener("click", function() {
     const email = rgEmail.value.trim();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

@@ -14,3 +14,10 @@
 .bn-empty { 
     text-align: center; 
     color: #777; }
+.btn-red { 
+  background: #dc2626; 
+  padding: 5px 10px; 
+}
+.btn:hover { 
+  background: #0b5c56; 
+}

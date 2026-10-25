@@ -45,7 +45,14 @@ h4{
 .btn-save { 
     background-color: #16a34a; 
     font-weight: bold; 
-    padding: 10px 30px; 
+    padding: 10px 30px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer; 
+}
+.btn-save:hover{
+    background:#0b4204;
 }
 .success-msg { 
     display: block; 

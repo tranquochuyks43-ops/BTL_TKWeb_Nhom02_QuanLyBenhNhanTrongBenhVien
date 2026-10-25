@@ -6,8 +6,7 @@
     margin-bottom: 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+    gap: 50px;
 }
 .tc-hero-text {
     flex: 1;
@@ -74,18 +73,24 @@
 }
 .tc-services {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 .tc-card {
     text-align: center;
     padding: 25px 20px;
-    cursor: default;  
-    transition: 0.2s;
+    cursor: default; 
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.06);
+    transition: transform .25s, background .25s, border-color .25s, box-shadow .25s;
 }
-.tc-card:hover {
-    transform: translateY(-4px);
-}
+.tc-card:hover, .tc-about:hover, .tc-contact:hover  { 
+    transform: translateY(-6px); 
+    background: #e5e7eb; 
+    border-color: #9ca3af; 
+    box-shadow: 0 10px 20px rgba(0,0,0,.15); 
+}  
 .tc-card h3 {
     margin-bottom: 10px;
     font-size: 18px;
@@ -116,18 +121,27 @@
 }
 .tc-contact p {
     margin-bottom: 8px;
-
     color: #555;
 }
+.tc-about, .tc-contact {
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    cursor: default;
+    transition: transform .25s, background .25s, border-color .25s, box-shadow .25s;
+}
+.tc-about:hover, .tc-contact:hover {
+    transform: translateY(-6px);
+    background: #e5e7eb;
+    border-color: #9ca3af;
+    box-shadow: 0 10px 20px rgba(0,0,0,.15);
+}
+
 @media (max-width: 900px) {
     .tc-services {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (max-width: 600px) {
-    .tc-services {
-        grid-template-columns: 1fr;
-    }
     .tc-hero {
         padding: 30px 20px;
     }
@@ -141,40 +155,11 @@
         text-align: center;
     }
 }
-.tc-card {
-    border: 2px solid #e5e7eb;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,.06);
-    transition: transform .25s, background .25s, border-color .25s, box-shadow .25s;
-}
-.tc-card h3, .tc-card p { transition: color .25s; }
-.tc-card:hover { transform: translateY(-6px); background: #e5e7eb; border-color: #9ca3af; box-shadow: 0 10px 20px rgba(0,0,0,.15); }   /* chỉ đổi màu xám khi rê chuột */
 
 /* =====  chức năng ===== */
-.tc-services { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 900px) { .tc-services { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .tc-services { grid-template-columns: 1fr; } }
-.tc-hero {
-    background:
-        linear-gradient(rgba(15,118,110,.55), rgba(15,118,110,.55)),
-        url("../images/nen-trang-chu.jpg") center / cover no-repeat,
-        #0f766e;
-    min-height: 260px;
-}
-
 @media (max-width: 600px) {
     .tc-hero { flex-direction: column; align-items: flex-start; }
     .tc-hero-image { width: 100%; }
-}
-.tc-about, .tc-contact {
-    border: 2px solid #e5e7eb;
-    border-radius: 12px;
-    cursor: default;
-    transition: transform .25s, background .25s, border-color .25s, box-shadow .25s;
-}
-.tc-about:hover, .tc-contact:hover {
-    transform: translateY(-6px);
-    background: #e5e7eb;
-    border-color: #9ca3af;
-    box-shadow: 0 10px 20px rgba(0,0,0,.15);
 }

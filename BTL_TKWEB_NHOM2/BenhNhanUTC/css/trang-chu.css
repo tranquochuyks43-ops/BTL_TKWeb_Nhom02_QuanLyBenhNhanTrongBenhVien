@@ -135,26 +135,3 @@
     border-color: #9ca3af;
     box-shadow: 0 10px 20px rgba(0,0,0,.15);
 }
-
-@media (max-width: 600px) {
-    .tc-hero {
-        padding: 30px 20px;
-    }
-    .tc-hero h1 {
-        font-size: 25px;
-    }
-    .tc-buttons {
-        flex-direction: column;
-    }
-    .tc-hero .btn {
-        text-align: center;
-    }
-}
-
-/* =====  chức năng ===== */
-@media (max-width: 900px) { .tc-services { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px) { .tc-services { grid-template-columns: 1fr; } }
-@media (max-width: 600px) {
-    .tc-hero { flex-direction: column; align-items: flex-start; }
-    .tc-hero-image { width: 100%; }
-}

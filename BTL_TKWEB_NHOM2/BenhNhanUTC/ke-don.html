@@ -31,7 +31,7 @@
       <div class="box">
         <h3> Chọn bệnh nhân </h3>
        <div class="form-row">
-          <select id="patientSelect" onchange="hienThiBenhNhan()">
+          <select id="chon" onchange="hienThiBenhNhan()">
               <option value="0">Nguyễn Việt An</option>
               <option value="1">Trần Quốc Huy</option>
               <option value="2">Phạm Gia Hưng</option>
@@ -79,7 +79,7 @@
       <div class="box">
         <h3>Kê đơn thuốc</h3>
         <div class="bang-thuoc">
-          <table id="prescriptionTable">
+          <table>
             <thead>
               <tr>
                 <th width="35%">Tên thuốc</th>
@@ -101,12 +101,12 @@
         <!--  thêm thuốc + tổng tiền  -->
         <div class="footer-bang-thuoc">
             <button class="btn" onclick="themDong()">+ Thêm loại thuốc</button>
-            <p class="tong-tien">Tổng viện phí: <span id="tongVienPhi" class="error">0</span> VNĐ</p>
+            <p class="tong-tien">Tổng viện phí: <span id="tongVienPhi">0</span> VNĐ</p>
         </div>
         <!-- Lưu  -->
         <div class="save">
-            <button class="btn btn-save" onclick="luuDonThuoc()">Lưu đơn thuốc</button>
-            <span id="saveMessage" class="success-msg"></span>
+            <button class="btn-save" onclick="luuDonThuoc()">Lưu đơn thuốc</button>
+            <span id="luuTinNhan" class="thong-bao"></span>
         </div>
       </div>
     </div>

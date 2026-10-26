@@ -1,62 +1,53 @@
-
-.bn-profile { 
-    justify-content: space-between; 
+.bn-profile{
+    justify-content: space-between;
     display: flex;
-    align-items: center;
-    gap: 40px; 
+    gap:20px;
 }
-.bn-info p { 
-    margin: 5px 10px;
-    font-size: 18px;
+.bn-info p{
+    font-size:18px;
+    margin:5px;
 }
-.avatar img {
-    width: 180px; height: 180px;
-    border-radius: 50%; 
-    border: 1px solid #ccc;
+.avatar img{
+    width: 180px;height: 180px;
+    border-radius: 50%;
+    border:1px solid #ccc;
 }
-.doctor {
-    width: 300px; 
-    padding: 15px;
-    margin-right: 100px;
+h4{
+    color:green;
 }
-h4{ 
-    color: #0f766e; 
-    font-size: 20px; 
+.doctor{
+    width:300px;
+    margin-right:100px;
 }
-.doctor label {
-    display: block; 
+.doctor label{
+    font-size:16px;
     font-weight: bold;
-    font-size: 16px; 
-    margin-bottom: 5px;
+    margin:5px;
+    display: block;
 }
-.footer-bang-thuoc { 
+.footer-bang-thuoc{
+    justify-content: space-between;
     display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    margin-top: 15px; 
+    gap:20px;
+    margin-top:10px;
 }
-.tong-tien { 
-    font-weight: bold; 
-    margin: 0;
-    font-size: 18px;
+.tong-tien{
+    font-size:18px;
+    font-weight: bold;
 }
-.save { 
-    text-align: center; }
-.btn-save { 
-    background-color: #16a34a; 
-    font-weight: bold; 
-    padding: 10px 30px;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer; 
+.save{
+    text-align: center;
 }
-.btn-save:hover{
-    background:#0b4204;
+.btn-save{
+    padding:10px 15px;
+    background:green;
+    border-radius: 10px;
+    border:none;
+    color:white;
+    cursor: pointer;
 }
-.success-msg { 
-    display: block; 
-    color: #16a34a; 
-    font-weight: bold; 
-    margin-top: 10px; 
-    font-size: 16px; }
+.thong-bao{
+    display: block;
+    color:green;
+    margin-top:10px;
+}

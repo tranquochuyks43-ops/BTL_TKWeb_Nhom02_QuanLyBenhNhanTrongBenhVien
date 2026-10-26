@@ -8,7 +8,7 @@ var danhSachBenhNhan = [
 ];
 // 2. Hiển thị thông tin bệnh nhân
 function hienThiBenhNhan() {
-  var viTri = document.getElementById("patientSelect").value;
+  var viTri = document.getElementById("chon").value;
   var bn = danhSachBenhNhan[viTri];
   // Gán giá tri =fieldMap
   var fieldMap = {
@@ -23,7 +23,7 @@ for (var id in fieldMap) {
   
   document.getElementById("tableBody").innerHTML = "";
   document.getElementById("tongVienPhi").innerText = "0";
-  document.getElementById("saveMessage").innerText = "";
+  document.getElementById("luuTinNhan").innerText = "";
   
   themDong(); 
 }
@@ -97,5 +97,5 @@ function luuDonThuoc() {
       alert("Vui lòng điền đầy đủ thông tin Tên và SĐT của Bác sĩ!");
       return; 
   }
-  document.getElementById("saveMessage").innerText = " Lưu đơn thuốc thành công!";
+  document.getElementById("luuTinNhan").innerText = " Lưu đơn thuốc thành công!";
 }

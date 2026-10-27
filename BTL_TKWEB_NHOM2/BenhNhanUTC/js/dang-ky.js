@@ -44,6 +44,7 @@ btnReg.addEventListener("click", function() {
     if (!emailRegex.test(email)) {
 
         rgMsg.textContent = "Email không đúng định dạng!";
+        rgMsg.classList.remove("success");
         rgMsg.classList.add("error");
 
         return;
